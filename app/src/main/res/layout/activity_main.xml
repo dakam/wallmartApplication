@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="@dimen/logo_w"
+        android:layout_height="@dimen/logo_h"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:contentDescription="logo"
+        android:src="@drawable/wallmart">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/title"
+        android:textSize="@dimen/title"
+        />
+
+    <LinearLayout android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:padding="25dp"
+        android:background="@drawable/btn_bordered"
+        android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="@string/email_txt"
+         />
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/email"
+        android:background="@drawable/btn_bordered"
+        android:layout_gravity="center"
+        android:layout_height="50dp">
+    </EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/password_txt"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/password"
+        android:background="@drawable/btn_bordered"
+        android:layout_gravity="center"
+        android:layout_height="50dp">
+    </EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:id="@+id/forgot_pwd"
+        android:autoLink="all"
+        android:text="@string/forgot_pwd"
+        android:layout_gravity="end"
+        />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_above="@id/create_txt"
+                android:layout_marginTop="@dimen/btn_margin"
+                android:background="@color/blue"
+                android:textAllCaps="false"
+                android:id="@+id/btn_login"
+                android:text="@string/btn_txt">
+            </Button>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_above="@id/create"
+                android:layout_marginTop="10dp"
+                android:id="@+id/create_txt"
+                android:text="@string/noaccount_txt"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/blue"
+        android:id="@+id/create"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:text="@string/btn_new">
+    </Button>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <dimen name="btn_margin">15dp</dimen>
+ <dimen name="logo_h">55dp</dimen>
+ <dimen name="logo_w">7600dp</dimen>
+ <dimen name="title">25sp</dimen>
+ <dimen name="cat_img">250dp</dimen>
+ <dimen name="cat_img_h">270dp</dimen>
+
+</resources>

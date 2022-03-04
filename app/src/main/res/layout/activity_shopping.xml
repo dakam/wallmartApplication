@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:layout_gravity="center"
+    tools:context=".ShoppingActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:id="@+id/welcome"
+        android:gravity="center"
+        android:textSize="@dimen/title"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Shop by categories"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="@dimen/title"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+        <TableRow
+            android:layout_width="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cat_img_h"           android:layout_weight="1"
+            android:layout_gravity="center"
+            android:id="@+id/electronics"
+            android:contentDescription="electronics"
+            android:src="@drawable/electronics">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/clothing"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cat_img_h"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:contentDescription="clothing"
+            android:src="@drawable/clothings"></ImageView>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Electronics"
+            android:layout_weight="1"
+            android:id="@+id/electronicsText"
+            android:gravity="center"
+            android:textSize="@dimen/title"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clothings"
+            android:layout_weight="1"
+            android:id="@+id/clothingsText"
+            android:gravity="center"
+            android:textSize="@dimen/title"
+            />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cat_img_h"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:id="@+id/beauty"
+                android:contentDescription="electronics"
+                android:src="@drawable/beauty">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/food"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cat_img_h"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:contentDescription="clothing"
+                android:src="@drawable/food">
+
+            </ImageView>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:text="Beauty"
+                android:id="@+id/beautyText"
+                android:gravity="center"
+                android:textSize="@dimen/title"
+                />
+
+            <TextView
+
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:text="Food"
+                android:id="@+id/clothingText"
+                android:gravity="center"
+                android:textSize="@dimen/title"
+                />
+        </TableRow>
+
+
+
+    </TableLayout>
+</LinearLayout>
