@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">WallmartLogin</string>
+    <string name="app_name">Wallmart Application</string>
     <string name="email_txt">Email Address (required)</string>
     <string name="password_txt">Password (required)</string>
     <string name="forgot_pwd">Forgot Password?</string>
